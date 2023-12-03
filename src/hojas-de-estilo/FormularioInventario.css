@@ -1,0 +1,87 @@
+.formulario{
+    background-color: var(--blanco);
+    width: min( 60rem, 100%); /* Utilizar el valor mas pequeno*/
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid;
+    border-radius: 1rem;
+}
+
+.formulario-inventario{
+    border: none;
+}
+
+.formulario-inventario-legend{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--colorPrincipal);
+}
+
+.contenedor_campos{
+    text-align: start;
+    margin: 0 5rem;
+}
+
+.campo{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-bottom: 1.5rem;
+}
+
+.campo label{
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.campo input, .campo select{
+    padding: 1rem;
+}
+
+.input-imagen{
+    padding: 1rem;
+    border: 0.1px solid grey;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.campo-tresColumnas{
+    grid-template-columns: 20% 40% 40%;
+}
+
+.agregar{
+    text-align: end;
+}
+
+.agregar input{
+    padding: 1rem 3rem;
+    background-color: var(--colorPrincipal);
+    color: var(--blanco);
+    font-size: 1.8rem;
+    font-weight: bold;
+
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Agrega una transición suave a los cambios de fondo y escala */
+
+    border-radius: 5px 5px 5px 5px;
+    text-transform: uppercase;
+}
+.agregar input:hover {
+    background-color: var(--colorSecundario); /* Cambia el color de fondo al pasar el mouse */
+    color: var(--negro);
+    cursor: pointer;
+    transform: scale(1.1); /* Aplica una escala al botón al pasar el mouse */
+}
+
+select{
+    text-align: center;
+}
+
+.campo-fc{
+    text-align: center;
+}

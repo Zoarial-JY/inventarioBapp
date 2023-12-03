@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+}
+
+.menu-boton{
+    display: flex;
+    width: 100%; /* Hace que el botón ocupe todo el ancho del contenedor */
+    justify-content: center; /* Alinea el texto del botón a la centro */
+    align-items: center; /* Alinea el texto del botón a la centro */
+    background-color: var(--colorPrincipal); /* Cambia el color de fondo según sea necesario */
+    color: var(--blanco); /* Cambia el color del texto según sea necesario */
+    font-size: 4rem;
+    font-weight: bold; 
+    border: none; /* Elimina el borde del botón */
+    padding: 3rem; /* Añade relleno al botón según sea necesario */
+    margin: 0; /* Elimina el margen del botón */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Agrega una transición suave a los cambios de fondo y escala */
+
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+
+    border-radius: 5px 5px 5px 5px;
+
+}
+.menu-boton:hover {
+    background-color: var(--colorSecundario); /* Cambia el color de fondo al pasar el mouse */
+    color: var(--negro);
+    cursor: pointer;
+    transform: scale(1.1); /* Aplica una escala al botón al pasar el mouse */
+}
+
+.contenedor-botones_enlaces{
+    min-width:80rem;
+}

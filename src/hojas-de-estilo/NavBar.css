@@ -1,0 +1,43 @@
+.contenedor-nav{
+    width: 100%;
+}
+
+.nav-bar{
+    border-radius: 114px 114px 114px 114px;
+    -moz-border-radius: 114px 114px 114px 114px;
+    -webkit-border-radius: 114px 114px 114px 114px;
+    border: 0px solid #000000;
+}
+.sin-puntos {
+    list-style-type: none; /* Elimina los puntos o viñetas */
+}
+
+.color-fondo {
+    background-color: var(--colorPrincipal);
+}
+
+.nav-bar--enlaces{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 2rem;
+}
+
+.enlaces-nav--botones{
+    padding: 2rem 2rem;
+    font-size: 3rem;
+}
+
+.enlaces-nav{
+    color: var(--blanco);
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0; /* Elimina el margen del botón */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Agrega una transición suave a los cambios de fondo y escala */
+}
+
+.enlaces-nav:hover{
+    background-color: var(--colorSecundario); /* Cambia el color de fondo al pasar el mouse */
+    color: var(--negro);
+    cursor: pointer;
+    transform: scale(1.1); /* Aplica una escala al botón al pasar el mouse */   
+} 
